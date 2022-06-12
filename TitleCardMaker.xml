@@ -10,6 +10,9 @@
       <TagDescription>The work-in-progress (unstable) release</TagDescription>
   </Branch>
   <Screenshot>https://user-images.githubusercontent.com/17693271/162633928-9c943ede-b309-4cf0-9798-9a196ed8791e.jpg</Screenshot>
+  <Screenshot>https://user-images.githubusercontent.com/17693271/162633951-c6e7b6fd-1115-45ce-b16c-7282f7eb2198.jpg</Screenshot>
+  <Screenshot>https://user-images.githubusercontent.com/17693271/162633910-dec80bdb-37e3-488f-8012-6e6dc885c9cd.jpg</Screenshot>
+  <Screenshot>https://user-images.githubusercontent.com/17693271/172227163-0ee4990a-b0a8-4dbd-91b3-3f57dfe6e732.jpg</Screenshot>
   <Repository>https://github.com/CollinHeist/TitleCardMaker</Repository>
   <Registry>https://hub.docker.com/r/collinheist/titlecardmaker</Registry>
   <Network>host</Network>
