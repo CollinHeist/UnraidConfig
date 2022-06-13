@@ -45,7 +45,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/appdata/TitleCardMaker/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -60,7 +60,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/appdata/TitleCardMaker/logs</HostDir>
       <ContainerDir>/maker/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
