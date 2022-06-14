@@ -165,7 +165,7 @@
           Description="Verbosity of output log&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_LOG&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--log&amp;lt;/b&amp;gt;"
           Type="Variable"
           Display="advanced"
-          Required="false"
+          Required="true"
           Mask="false"/>
   <Config Name="Archive Directory"
           Target="/archive"
