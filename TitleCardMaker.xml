@@ -115,7 +115,7 @@
           Mask="false"/>
   <Config Name="Runtime"
           Target="TCM_RUNTIME"
-          Default="22:00"
+          Default="20:00"
           Mode=""
           Description="Start time for the TitleCardMaker's scheduled operation&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_RUNTIME&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--runtime&amp;lt;/b&amp;gt;"
           Type="Variable"
@@ -139,7 +139,7 @@
           Type="Path"
           Display="advanced"
           Required="true"
-          Mask="false"/>
+          Mask="false">/mnt/user/appdata/TitleCardMaker/config</Config>
   <Config Name="Group ID"
           Target="PGID"
           Default="314"
@@ -165,7 +165,7 @@
           Description="Verbosity of output log&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_LOG&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--log&amp;lt;/b&amp;gt;"
           Type="Variable"
           Display="advanced"
-          Required="true"
+          Required="false"
           Mask="false"/>
   <Config Name="Archive Directory"
           Target="/archive"
@@ -193,7 +193,7 @@
           Type="Path"
           Display="advanced"
           Required="false"
-          Mask="false"/>
+          Mask="false">/mnt/user/appdata/TitleCardMaker/logs</Config>
   <Config Name="Missing File"
           Target="TCM_MISSING"
           Default="/config/missing.yml"
