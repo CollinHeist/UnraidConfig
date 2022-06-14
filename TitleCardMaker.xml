@@ -45,6 +45,11 @@
   </Networking>
   <Data>
     <Volume>
+      <HostDir>/mnt/user/TCM/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir/>
       <ContainerDir>/archive</ContainerDir>
       <Mode>rw</Mode>
@@ -52,11 +57,6 @@
     <Volume>
       <HostDir/>
       <ContainerDir>/source</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/TitleCardMaker/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -133,7 +133,7 @@
           Mask="false"/>
   <Config Name="Configuration Path"
           Target="/config"
-          Default="/mnt/user/appdata/TitleCardMaker/config"
+          Default="/mnt/user/TCM/config"
           Mode="rw"
           Description="Directory to contain all source images and files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/source&amp;lt;/b&amp;gt;"
           Type="Path"
