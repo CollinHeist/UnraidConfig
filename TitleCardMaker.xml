@@ -135,11 +135,11 @@
           Target="/config"
           Default="/mnt/user/appdata/TitleCardMaker/config"
           Mode="rw"
-          Description="Directory to contain all configuration files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/config&amp;lt;/b&amp;gt;"
+          Description="Beep boop"
           Type="Path"
           Display="advanced"
           Required="true"
-          Mask="false">/mnt/user/appdata/TitleCardMaker/config</Config>
+          Mask="false"/>
   <Config Name="Group ID"
           Target="PGID"
           Default="314"
@@ -193,7 +193,7 @@
           Type="Path"
           Display="advanced"
           Required="false"
-          Mask="false">/mnt/user/appdata/TitleCardMaker/logs</Config>
+          Mask="false"/>
   <Config Name="Missing File"
           Target="TCM_MISSING"
           Default="/config/missing.yml"
