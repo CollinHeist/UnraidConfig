@@ -186,7 +186,7 @@
           Required="false"
           Mask="false"/>
   <Config Name="Log Directory"
-          target="/maker/logs"
+          Target="/maker/logs"
           Default="/mnt/user/appdata/TitleCardMaker/logs"
           Mode="rw"
           Description="Directory to contain all log files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/maker/logs&amp;lt;/b&amp;gt;"
