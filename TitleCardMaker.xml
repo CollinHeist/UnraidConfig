@@ -45,7 +45,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/TCM/config</HostDir>
+      <HostDir>/mnt/user/appdata/TitleCardMaker/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
