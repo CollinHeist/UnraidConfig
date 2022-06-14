@@ -5,7 +5,9 @@
     <Tag>master</Tag>
     <TagDescription>The most up-to-date (stable) release</TagDescription>
   </Branch>
-  <Branch> <Tag>develop</Tag> <TagDescription>The work-in-progress (unstable) release</TagDescription>
+  <Branch>
+      <Tag>develop</Tag>
+      <TagDescription>The work-in-progress (unstable) release</TagDescription>
   </Branch>
   <Screenshot>https://user-images.githubusercontent.com/17693271/162633928-9c943ede-b309-4cf0-9798-9a196ed8791e.jpg</Screenshot>
   <Screenshot>https://user-images.githubusercontent.com/17693271/162633951-c6e7b6fd-1115-45ce-b16c-7282f7eb2198.jpg</Screenshot>
@@ -42,12 +44,12 @@
     <Publish/>
   </Networking>
   <Config Name="Global Preference File" Target="TCM_PREFERENCES" Default="/config/preferences.yml" Mode="" Description="Filepath of the global preference file&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_PREFERENCES&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--preferences&amp;lt;/b&amp;gt;" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Runtime" Target="TCM_RUNTIME" Default="20:00" Mode="" Description="Start time for the TitleCardMaker's scheduled operation&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_RUNTIME&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--runtime&amp;lt;/b&amp;gt;" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Runtime" Target="TCM_RUNTIME" Default="22:00" Mode="" Description="Start time for the TitleCardMaker's scheduled operation&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_RUNTIME&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--runtime&amp;lt;/b&amp;gt;" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Run Frequency" Target="TCM_FREQUENCY" Default="12h" Mode="" Description="How often to run the TitleCardMaker&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_FREQUENCY&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--frequency&amp;lt;/b&amp;gt;" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Configuration Path" Target="/config" Default="/mnt/user/appdata/TitleCardMaker/config" Mode="rw" Description="Directory to contain all configuration files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/config&amp;lt;/b&amp;gt;" Type="Path" Display="advanced" Required="true" Mask="false"/>
   <Config Name="Group ID" Target="PGID" Default="314" Mode="" Description="Container Group ID (PGID)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="User ID" Target="PUID" Default="314" Mode="" Description="Container User ID (PUID)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Output Log Level" Target="TCM_LOG" Default="INFO" Mode="" Description="Verbosity of output log&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_LOG&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--log&amp;lt;/b&amp;gt;" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Configuration Path" Target="/config" Default="/mnt/user/appdata/TitleCardMaker/config" Mode="rw" Description="Directory to contain all source images and files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/source&amp;lt;/b&amp;gt;" Type="Path" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Archive Directory" Target="/archive" Default="" Mode="rw" Description="Directory to contain archives of title cards&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/archive&amp;lt;/b&amp;gt;" Type="Path" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Source Directory" Target="/source" Default="" Mode="rw" Description="Directory to contain all source images and files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/source&amp;lt;/b&amp;gt;" Type="Path" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Log Directory" Target="/maker/logs" Default="/mnt/user/appdata/TitleCardMaker/logs" Mode="rw" Description="Directory to contain all log files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/maker/logs&amp;lt;/b&amp;gt;" Type="Path" Display="advanced" Required="false" Mask="false"/>
