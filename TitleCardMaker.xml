@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>TitleCardMaker</Name>
   <Branch>
-    <Tag>master</Tag>
+    <Tag>latest</Tag>
     <TagDescription>The most up-to-date (stable) release</TagDescription>
   </Branch>
   <Branch>
@@ -19,7 +19,7 @@
   <Screenshot>https://user-images.githubusercontent.com/17693271/185722017-4ddeda3c-a2c5-4099-a29f-ff15e3819683.jpg</Screenshot>
   <Screenshot>https://user-images.githubusercontent.com/17693271/214648223-b4f68553-e982-4efa-a16b-9662018b5d40.jpg</Screenshot>
   <Screenshot>https://user-images.githubusercontent.com/17693271/213939482-6018b2be-28c5-42dd-988d-d7b9733fe0e8.jpg</Screenshot>
-  <Repository>collinheist/titlecardmaker:master</Repository>
+  <Repository>collinheist/titlecardmaker:latest</Repository>
   <Registry>https://hub.docker.com/r/collinheist/titlecardmaker</Registry>
   <Network>host</Network>
   <MyIP/>
@@ -27,42 +27,35 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/CollinHeist/TitleCardMaker/wiki/Docker-Tutorial</Support>
   <Project>https://github.com/CollinHeist/TitleCardMaker/wiki</Project>
-  <Overview>[h2][b][u]TitleCardMaker[/u][/b][/h2]&#xD;
-[h4][i]Automated title card maker for Plex[/i][/h4]&#xD;
-&#xD;
-&amp;lt;a href="https://github.com/CollinHeist/TitleCardMaker/wiki/Docker-Tutorial"&amp;gt;Instructions are hosted on GitHub: https://github.com/CollinHeist/TitleCardMaker/wiki/Docker-Tutorial&amp;lt;/a&amp;gt;</Overview>
+  <Overview>TitleCardMaker
+Automated title card maker for Plex, Emby, and Jellyfin. Setup instructions are hosted on GitHub: https://github.com/CollinHeist/TitleCardMaker/wiki/Docker-Tutorial</Overview>
   <Category>Tools: Status:Stable</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/CollinHeist/TitleCardMaker/40d45900c8533ec18fa2ca6603923838930abe98/.github/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/CollinHeist/TitleCardMaker/refs/heads/web-ui/.github/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1654559238</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>[h2][b][u]TitleCardMaker[/u][/b][/h2]&#xD;
-[h4][i]Automated title card maker for Plex[/i][/h4]&#xD;
-&#xD;
-&amp;lt;a href="https://github.com/CollinHeist/TitleCardMaker/wiki/Docker-Tutorial"&amp;gt;Instructions are hosted on GitHub: https://github.com/CollinHeist/TitleCardMaker/wiki/Docker-Tutorial&amp;lt;/a&amp;gt;</Description>
+  <Description>itleCardMaker
+Automated title card maker for Plex, Emby, and Jellyfin. Setup instructions are hosted on GitHub: https://github.com/CollinHeist/TitleCardMaker/wiki/Docker-Tutorial</Description>
   <Networking>
     <Mode>host</Mode>
     <Publish/>
   </Networking>
-  <Config Name="Host Media Directory" Target="/media" Default="" Mode="rw" Description="Directory containing media to create title cards for&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/media&amp;lt;/b&amp;gt;" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="Source Directory" Target="/source" Default="/mnt/user/appdata/TitleCardMaker/source" Mode="rw" Description="Directory to contain all source images and files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/source&amp;lt;/b&amp;gt;" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Configuration Path" Target="/config" Default="/mnt/user/appdata/TitleCardMaker/config" Mode="rw" Description="Directory to contain all configuration files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/config&amp;lt;/b&amp;gt;" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Global Preference File" Target="TCM_PREFERENCES" Default="/config/preferences.yml" Mode="" Description="Container filepath of the global preference file&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_PREFERENCES&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--preferences&amp;lt;/b&amp;gt;" Type="Variable" Display="advanced" Required="true" Mask="false"/>
-  <Config Name="Runtime" Target="TCM_RUNTIME" Default="22:00" Mode="" Description="Start time for the TitleCardMaker's scheduled operation&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_RUNTIME&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--runtime&amp;lt;/b&amp;gt;" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Run Frequency" Target="TCM_FREQUENCY" Default="12h" Mode="" Description="How often to run the TitleCardMaker&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_FREQUENCY&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--frequency&amp;lt;/b&amp;gt;" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Archive Directory" Target="/archive" Default="/mnt/user/appdata/TitleCardMaker/archive" Mode="rw" Description="Directory to contain archives of title cards&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/archive&amp;lt;/b&amp;gt;" Type="Path" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Log Directory" Target="/maker/logs" Default="/mnt/user/appdata/TitleCardMaker/logs" Mode="rw" Description="Directory to contain all log files&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/maker/logs&amp;lt;/b&amp;gt;" Type="Path" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Configuration Path" Target="/config" Default="/mnt/user/appdata/TitleCardMaker/config" Mode="rw" Description="Directory to contain all configuration files" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Runtime" Target="TCM_RUNTIME" Default="22:00" Mode="" Description="Start time for TitleCardMaker's scheduled operation. Container Variable: TCM_RUNTIME / --runtime" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Run Frequency" Target="TCM_FREQUENCY" Default="12h" Mode="" Description="How often to run TitleCardMaker. Container Variable: TCM_FREQUENCY / --frequency" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Archive Directory" Target="/archive" Default="/mnt/user/appdata/TitleCardMaker/archive" Mode="rw" Description="Directory to contain archives of title cards" Type="Path" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Log Directory" Target="/maker/logs" Default="/mnt/user/appdata/TitleCardMaker/logs" Mode="rw" Description="Directory to contain all log files" Type="Path" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Group ID" Target="PGID" Default="99" Mode="" Description="Container Group ID (PGID)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="User ID" Target="PUID" Default="100" Mode="" Description="Container User ID (PUID)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="File creation mode mask" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Missing File" Target="TCM_MISSING" Default="/config/missing.yml" Mode="" Description="Container filepath to write all missing assets to&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_MISSING&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--missing&amp;lt;/b&amp;gt;" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Tautulli Directory" Target="/tautulli" Default="/mnt/user/appdata/tautulli" Mode="rw" Description="Directory containing the Tautulli update file&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Mount to &amp;lt;b&amp;gt;/tautulli&amp;lt;/b&amp;gt;" Type="Path" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Tautulli Update List" Target="TCM_TAUTULLI_UPDATE_LIST" Default="/tautulli/update.txt" Mode="" Description="Container filepath to monitor for Tautulli integration&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_TAUTULLI_UPDATE_LIST&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--tautulli-update-list&amp;lt;/b&amp;gt;" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Tautulli Update Frequency" Target="TCM_TAUTULLI_UPDATE_FREQUENCY" Default="4m" Mode="" Description="How often to check for the Tautulli update file&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_TAUTULLI_UPDATE_FREQUENCY&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--tautulli-update-frequency&amp;lt;/b&amp;gt;" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Output Log Level" Target="TCM_LOG" Default="INFO" Mode="" Description="Verbosity of output log&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;&#13;&#10;Container Variable: &amp;lt;b&amp;gt;TCM_LOG&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&#13;&#10;Command Line Argument: &amp;lt;b&amp;gt;--log&amp;lt;/b&amp;gt;" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Missing File" Target="TCM_MISSING" Default="/config/missing.yml" Mode="" Description="Container filepath to write all missing assets to. Container Variable: TCM_MISSING / --missing" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Tautulli Directory" Target="/tautulli" Default="/mnt/user/appdata/tautulli" Mode="rw" Description="Directory containing the Tautulli update file" Type="Path" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Tautulli Update List" Target="TCM_TAUTULLI_UPDATE_LIST" Default="/tautulli/update.txt" Mode="" Description="Container filepath to monitor for Tautulli integration. Container Variable: TCM_TAUTULLI_UPDATE_LIST / --tautulli-update-list" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Tautulli Update Frequency" Target="TCM_TAUTULLI_UPDATE_FREQUENCY" Default="4m" Mode="" Description="How often to check for the Tautulli update file. Container Variable: TCM_TAUTULLI_UPDATE_FREQUENCY / --tautulli-update-frequency" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Output Log Level" Target="TCM_LOG" Default="INFO" Mode="" Description="Log level for all messages. Container Variable: TCM_LOG / --log" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
