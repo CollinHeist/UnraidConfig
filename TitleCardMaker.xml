@@ -25,7 +25,7 @@
   <Project>https://titlecardmaker.com</Project>
   <Overview>Automated title card maker for Plex, Emby, and Jellyfin. Setup instructions: https://titlecardmaker.com/getting_started</Overview>
   <Category>Tools: Status:Stable</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:4242]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/CollinHeist/TitleCardMaker/refs/heads/web-ui/.github/logo.png</Icon>
   <ExtraParams/>
@@ -39,6 +39,7 @@
     <Mode>host</Mode>
     <Publish/>
   </Networking>
+  <Config Name="HTTP Port" Target="4242" Default="" Mode="tcp" Description="Port to the web interface" Type="Port" Display="always" Required="false" Mask="false">4242</Config>
   <Config Name="Data Path" Target="/config" Default="/mnt/user/appdata/TitleCardMaker/config" Mode="rw" Description="Directory to contain all TCM files" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Group ID" Target="PGID" Default="99" Mode="" Description="Container Group ID (PGID)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="User ID" Target="PUID" Default="100" Mode="" Description="Container User ID (PUID)" Type="Variable" Display="always" Required="true" Mask="false"/>
