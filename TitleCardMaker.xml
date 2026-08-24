@@ -15,8 +15,8 @@
   <Screenshot>https://user-images.githubusercontent.com/17693271/185722017-4ddeda3c-a2c5-4099-a29f-ff15e3819683.jpg</Screenshot>
   <Screenshot>https://user-images.githubusercontent.com/17693271/214648223-b4f68553-e982-4efa-a16b-9662018b5d40.jpg</Screenshot>
   <Screenshot>https://user-images.githubusercontent.com/17693271/213939482-6018b2be-28c5-42dd-988d-d7b9733fe0e8.jpg</Screenshot>
-  <Repository>titlecardmaker/titlecardmaker:latest</Repository>
-  <Registry>https://docker pull ghcr.io/titlecardmaker/titlecardmaker</Registry>
+  <Repository>ghcr.io/titlecardmaker/titlecardmaker:latest</Repository>
+  <Registry>https://ghcr.io/titlecardmaker/titlecardmaker</Registry>
   <Network>host</Network>
   <MyIP/>
   <Shell>sh</Shell>
